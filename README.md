@@ -3,7 +3,7 @@ An semi automatic process of reusing the decomiled audio files and dialogue scri
 (some handholding will be required as there are some mistakes and duplicates lines in the orginal Gothic script that mess with runing this code)
 
 # Preperations
-There are multiple python files.
+There are multiple python files in here, but before that, you will need to install desired version of Gothic on your pc.
 
 ### step 0
 First use the tools GothicSourcerV3_14 to decompile gothic.dat to gain the dialogue script .d files and GothicVDFS to extract dialogue from the speech.VDF files. Place the .d files in 'Dialoge' subfolder and audio files in 'SPEECH' subfolder.
