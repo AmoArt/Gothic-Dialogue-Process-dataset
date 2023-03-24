@@ -1,5 +1,6 @@
 # Gothic-Dialogue-Process-dataset
 An semi automatic process of reusing the decomiled audio files and dialogue scripts from Gothic game to convert them into an usable audio dataset.
+(some handholding will be required as there are some mistakes and duplicates lines in the orginal Gothic script that mess with runing this code)
 
 # Preperations
 There are multiple python files.
