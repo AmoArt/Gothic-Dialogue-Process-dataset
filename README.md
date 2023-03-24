@@ -20,7 +20,8 @@ place the "_dialogue_1_seperator_005a" in the "Dialoge" and run the script, move
 in main folder, run the "_dialogue_2_divider_003a.py" to split the previous text into the npc lines and "*_PC.txt" text lines, use the __txt_decoder_force_001.py to make all the text files in a utf-8 encodings (no idea why but some files are saved as iso-8859-1 encodings).
 
 ### step 3
-Move all the "*_PC.txt" to new subfolder, use the  __txt_merger_002.py to merge all of the main character lines into new  '_merged.txt' file, than move  '_merged.txt' back to main folder.
+Move all the "*_PC.txt" to new subfolder, use the  __txt_merger_002.py to merge all of the main character lines into new  '_merged.txt' file, than move  '_merged.txt' back to main folder. REMEBER TO EDIT THE '_merged.txt' file name so it has "output2_" in front of its name! 
+(it breakes code if it doesn't !!!)
 
 ### step 4
 Remove all the "output_*" text files as they are not needed anymore.
