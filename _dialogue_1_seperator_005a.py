@@ -18,16 +18,17 @@ def process_files():
     
     # Process each file
     for filename in files:
-        with open(filename, 'r') as input_file:
+        with open(filename, 'r', encoding='latin1') as input_file:
             for line in input_file:
+                if line.strip() == '"""': # skip empty lines
+                    continue
                 match = re.search(r'^\s*(AI_Output.*)$', line)
                 if match:
                     output_filename = f"output_{os.path.splitext(filename)[0]}.txt"
-                    with open(output_filename, 'a') as output_file:
+                    with open(output_filename, 'a', encoding='utf-8') as output_file:
                         modified_text = modify_text(match.group(1))
                         output_file.write(modified_text + '\n')
                         print(f"Line saved to {output_filename}: {modified_text}")
         print(f"Output saved to {output_filename}")
-
 
 process_files()
