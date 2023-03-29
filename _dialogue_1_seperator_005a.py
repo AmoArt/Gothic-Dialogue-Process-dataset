@@ -11,15 +11,20 @@ def modify_text(text):
     text = audio_filename + '|' + text.split('.wav|', 1)[1]
     return text
 
-
 def process_files():
     # Get all files in the current directory with the ".d" extension
     files = [file for file in os.listdir('.') if file.endswith('.d')]
     
     # Process each file
     for filename in files:
-        with open(filename, 'r', encoding='latin1') as input_file:
-            for line in input_file:
+        with open(filename, 'rb') as input_file:
+            try:
+                text = input_file.read().decode('latin1')
+            except UnicodeDecodeError:
+                input_file.seek(0)
+                text = input_file.read().decode()
+                
+            for line in text.splitlines():
                 if line.strip() == '"""': # skip empty lines
                     continue
                 match = re.search(r'^\s*(AI_Output.*)$', line)
@@ -30,8 +35,14 @@ def process_files():
                             modified_text = modify_text(match.group(1))
                             output_file.write(modified_text + '\n')
                             print(f"Line saved to {output_filename}: {modified_text}")
-        print(f"Output saved to {output_filename}")
+                        print(f"Output saved to {output_filename}")
+                    else:
+                        print("No output found in line.")
+                        
+            print(f"All output saved for {filename}.")
 
 process_files()
+
+print("Done")
 
 print("Done")
