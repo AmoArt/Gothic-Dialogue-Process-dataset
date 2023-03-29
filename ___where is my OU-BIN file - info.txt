@@ -1,0 +1,8 @@
+https://web.archive.org/web/20210214180036/https://steamcommunity.com/app/39510/discussions/0/540737262252051841/
+
+"Go into your program file of your Gothic 2 and in work/Data/Scripts/Content/Cutscene and rename 
+
+OU.DAT to OU.BIN and OU.lsc to OU.csl, and it should work fine after that."
+
+also, when installing with GOG, make sure that in the gog galaxy setting, 
+the language for the game is set to whatever language you are planing to use.
