@@ -13,7 +13,7 @@ def extract_audio_files():
         audio_file = f"audiofiles_{input_filename}.txt"
         
         # Open the input and output files
-        with open(output_file, 'r') as input_file, open(audio_file, 'w') as output:
+        with open(output_file, 'r', encoding='utf-8') as input_file, open(audio_file, 'w', encoding='utf-8') as output:
             # Read each line, remove everything after the "|" and write it to the output file
             for line in input_file:
                 line = re.sub(r'\|.*?$', '', line)

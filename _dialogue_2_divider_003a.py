@@ -15,7 +15,7 @@ def process_files():
         npc_output_file = f"output2_{input_filename}.txt"
         
         # Open the input and output files
-        with open(output_file, 'r') as input_file, open(pc_output_file, 'w', encoding='utf-8') as pc_output, open(npc_output_file, 'w', encoding='utf-8') as npc_output:
+        with open(output_file, 'r', encoding='utf-8') as input_file, open(pc_output_file, 'w', encoding='utf-8') as pc_output, open(npc_output_file, 'w', encoding='utf-8') as npc_output:
             # Read each line and write it to the appropriate output file
             for line in input_file:
                 if "_15_" in line:
