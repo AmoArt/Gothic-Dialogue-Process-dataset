@@ -11,7 +11,7 @@ def process_files():
     for output_file in output_files:
         # Generate the new output filenames
         input_filename = output_file.split('_', 1)[1].rsplit('.', 1)[0]
-        pc_output_file = f"output2_{input_filename}_PC.txt"
+        pc_output_file = f"output2_{input_filename}_PlayerC.txt"
         npc_output_file = f"output2_{input_filename}.txt"
         
         # Open the input and output files
