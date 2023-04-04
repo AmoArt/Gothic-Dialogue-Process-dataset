@@ -34,9 +34,9 @@ Run "_dialogue_1_seperator_005b_RUS"
 
 
 
-step 1b
+~~step 1b
 IF you are converting files from Polish, you will notice that the dialogue lines have many strnge looking characters, as the text file editor is not able to decode the text correcly, so run the "_dialogue_1b_letters_convert_POL" python code to bute force swap the incorrect symbols to correct Polish letters.
-I curretly do not have an supporting file for the German, Russian or any other language version. However the code is just a simple symbol dictionary that is pretty easy to edit.
+I curretly do not have an supporting file for the German, Russian or any other language version. However the code is just a simple symbol dictionary that is pretty easy to edit.~~
 
 ### step 2
 Run the "_dialogue_2_divider_003a.py" to split the previous text into the npc lines and "*_PlayerC.txt" text lines.
