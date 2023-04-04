@@ -26,6 +26,7 @@ Run "_dialogue_1_seperator_005a" in the "Dialoge" folder, to generate "output_*.
 
 IF you are working with Polish version of the game, runt below (ignore instructions regarding the "_dialogue_1b_letters_convert_POL", that code is outdated.):
 Run "_dialogue_1_seperator_005b_POL"
+
 IF you are working with Russian version of the game, runt below:
 Run "_dialogue_1_seperator_005b_RUS"
 
