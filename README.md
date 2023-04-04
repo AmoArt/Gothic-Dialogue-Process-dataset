@@ -21,14 +21,16 @@ Copy the python files into the main 'Dialoge' folder.
 
 ## Cleaning the .d dialogue
 ### step 1
-IF you are working with German or English version of the game, runt below:
+
+IF you are working with German or English version of the game, run the code below:
 Run "_dialogue_1_seperator_005a" in the "Dialoge" folder, to generate "output_*.txt" files.
 
-IF you are working with Polish version of the game, runt below (ignore instructions regarding the "_dialogue_1b_letters_convert_POL", that code is outdated.):
+IF you are working with Polish version of the game, run this (ignore instructions regarding the "_dialogue_1b_letters_convert_POL", that code is outdated.):
 Run "_dialogue_1_seperator_005b_POL"
 
-IF you are working with Russian version of the game, runt below:
+IF you are working with Russian version of the game, run this:
 Run "_dialogue_1_seperator_005b_RUS"
+
 
 
 
