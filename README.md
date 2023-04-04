@@ -21,7 +21,15 @@ Copy the python files into the main 'Dialoge' folder.
 
 ## Cleaning the .d dialogue
 ### step 1
+IF you are working with German or English version of the game, runt below:
 Run "_dialogue_1_seperator_005a" in the "Dialoge" folder, to generate "output_*.txt" files.
+
+IF you are working with Polish version of the game, runt below (ignore instructions regarding the "_dialogue_1b_letters_convert_POL", that code is outdated.):
+Run "_dialogue_1_seperator_005b_POL"
+IF you are working with Russian version of the game, runt below:
+Run "_dialogue_1_seperator_005b_RUS"
+
+
 
 step 1b
 IF you are converting files from Polish, you will notice that the dialogue lines have many strnge looking characters, as the text file editor is not able to decode the text correcly, so run the "_dialogue_1b_letters_convert_POL" python code to bute force swap the incorrect symbols to correct Polish letters.
